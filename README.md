@@ -6,7 +6,8 @@ In Carousel.java, we have to modify the code :
 
 
 
-private void Calculate3DPosition(CarouselItem child, int diameter,float angleOffset) {    
+private void Calculate3DPosition(CarouselItem child, int diameter,float angleOffset) {   
+
         angleOffset = angleOffset * (float) (Math.PI / 180.0f);
         float y = (float) (diameter / 2 * Math.sin(angleOffset)) + diameter / 2
                 - child.getWidth() / 2;
@@ -15,6 +16,7 @@ private void Calculate3DPosition(CarouselItem child, int diameter,float angleOff
         child.setX(x + 250);//This values should be change (250)
         child.setZ(z);
         child.setY(y - 150);//This values should be change(150) 
+        
 }
 
 
