@@ -4,6 +4,7 @@ I used the source from this link :http://www.codeproject.com/Articles/146145/And
 
 In Carousel.java, we have to modify the code :
 
+
 private void Calculate3DPosition(CarouselItem child, int diameter,float angleOffset) 
 {
        
@@ -16,6 +17,7 @@ private void Calculate3DPosition(CarouselItem child, int diameter,float angleOff
         child.setZ(z);
         child.setY(y - 150);//This values should be change(150) 
 }
+
 
 I have done some adjustment for my project by changing setX,setY values and it is worked for me.
 If anybody can suggest in proper calculations should be appreciatable. 
