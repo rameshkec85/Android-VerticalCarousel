@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/com.carouseldemo.main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/selected_item"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:background="#1E1921"
+        android:text="text"
+        android:textColor="#A85E4F"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip" >
+
+        <com.carouseldemo.controls.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            pj:Items="@array/entries"
+            pj:Names="@array/names"
+            pj:SelectedItem="0"
+            pj:UseReflection="true"
+            android:animationDuration="200" />
+        <!-- pj:Names="@array/names" -->
+        <!--
+             <com.carouseldemo.controls.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="fill_parent"
+            android:layout_height="482dp"
+            android:layout_weight="0.90"
+            pj:Items="@array/entries"
+            pj:SelectedItem="0"
+            pj:UseReflection="true"
+            android:animationDuration="200" 
+            
+            />
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

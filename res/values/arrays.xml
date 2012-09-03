@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <array name="entries">
+
+        <!--
+        <item>@drawable/strabwberry</item>		
+		<item>@drawable/peach</item> 		
+		<item>@drawable/sweet</item>		
+		<item>@drawable/wine</item>
+		<item>@drawable/grape</item>
+        -->
+
+        <item>@drawable/cat</item>
+        <item>@drawable/hippo</item>
+        <item>@drawable/monkey</item>
+        <item>@drawable/mouse</item>
+        <item>@drawable/panda</item>
+        <!-- <item>@drawable/rabbit</item> -->
+
+    </array>
+    <array name="names">
+        <item>strabwberry</item>
+        <item>peach</item>
+        <item>sweet</item>
+        <item>wine</item>
+        <item>grape</item>
+        <!-- <item>wine</item> -->
+    </array>
+    <!--
+     	<item>@drawable/cat</item>		
+		<item>@drawable/hippo</item> 		
+		<item>@drawable/monkey</item>		
+		<item>@drawable/mouse</item>
+		<item>@drawable/panda</item>		
+		<item>@drawable/rabbit</item>						
+    -->
+
+</resources>
