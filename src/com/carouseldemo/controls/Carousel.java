@@ -1421,6 +1421,7 @@ public class Carousel extends CarouselSpinner implements
 	 */
 	private void setUpChild(CarouselItem child, int index, float angleOffset) {
 
+try{
 		// Ignore any layout parameters for child, use wrap content
 		addViewInLayout(child, -1 /* index */, generateDefaultLayoutParams());
 
@@ -1457,6 +1458,11 @@ public class Carousel extends CarouselSpinner implements
 		child.layout(childLeft, childTop, w, h);
 
 		Calculate3DPosition(child, d, angleOffset);
+	} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 
 	}
 
