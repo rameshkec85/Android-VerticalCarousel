@@ -327,22 +327,28 @@ public class Carousel extends CarouselSpinner implements
 	/**
 	 * Implemented to handle touch screen motion events.
 	 */
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-
-		// Give everything to the gesture detector
-		boolean retValue = mGestureDetector.onTouchEvent(event);
-
-		int action = event.getAction();
-		if (action == MotionEvent.ACTION_UP) {
-			// Helper method for lifted finger
-			onUp();
-		} else if (action == MotionEvent.ACTION_CANCEL) {
-			onCancel();
-		}
-
-		return retValue;
-	}
+		 @Override
+		    public boolean onTouchEvent(MotionEvent event) {
+		
+		        // Give everything to the gesture detector
+		    	boolean retValue;
+		        try{
+		        	retValue = mGestureDetector.onTouchEvent(event);
+		        } catch(Exception e){
+		        	return false;
+		        }
+		        
+		
+		        int action = event.getAction();
+		        if (action == MotionEvent.ACTION_UP) {
+		            // Helper method for lifted finger
+		            onUp();
+		        } else if (action == MotionEvent.ACTION_CANCEL) {
+		            onCancel();
+		        }
+		        
+		        return retValue;
+		    }	
 
 	/**
 	 * Extra information about the item for which the context menu should be
